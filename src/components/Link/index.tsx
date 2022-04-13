@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import NextLink, { LinkProps } from 'next/link'
+import NextLink from 'next/link'
 
 interface linkProps {
   href: string,

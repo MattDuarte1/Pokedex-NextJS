@@ -19,7 +19,7 @@ interface dataProps {
   tipos: any,
 }
 
-export const ShowPokePage = ({nome, img, status, tipos}: dataProps) => {
+export const ShowPokePage = ({nome, img, status}: dataProps) => {
   return(
   <C.PokeContainer>
     <C.TitlePoke>{nome}</C.TitlePoke>
