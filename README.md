@@ -10,6 +10,7 @@
 <p>Esse foi meu primeiro projeto criado no Nextjs com objetivo de demonstrar meus conhecimentos, nesse framework maravilhoso.
 Me falta conhecimento sobre como estruturar um projeto adequadamente, mas ... é fazendo que se aprende e um dia eu chego lá rsrs . <p>
 </br>
+- <a href="https://625716697e385a005d95cc77--ephemeral-nougat-716bf8.netlify.app/"><h3>Site</h3></a>
 
 
 ## 📝️ Sobre
