@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import {GetStaticProps} from 'next'
+import {GetStaticProps, NextPage} from 'next'
 import { ParsedUrlQuery } from 'querystring';
 import { API } from '../../api';
 import * as C from './style'
@@ -11,11 +11,11 @@ import {BsArrowLeftCircleFill} from 'react-icons/bs'
 import Head from 'next/head';
 
 
-const Pokemon = ({Pokemon = null, error}:any) => {
+const Pokemon: NextPage = ({Pokemon = null, error}:any) => {
   const [loading, setLoading] = useState<Boolean>(false);
   const [states, setStates] = useState(false)
   const { query } = useRouter();
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     setStates(true)

@@ -8,15 +8,19 @@ const url = axios.create({
 
 export const API = {
   getAllPokemons: async (limite: string | undefined, offset:string | undefined) => {
-    const request = await url.get(`?limit=${limite}&offset=${offset}`)
-    return request.data.results
+    try {
+      const request = await url.get(`?limit=${limite}&offset=${offset}`)
+      return request.data.results
+    } catch (error) {
+      console.log('error na requesição')
+    }
   },
   getPokeData: async (name: string) => {
       try {
         const request = await url.get(`/${name}`)
         return request.data
       } catch (error) {
-        console.log('Deu algum erro')
+        console.log('error na requesição')
       }
 
   }
