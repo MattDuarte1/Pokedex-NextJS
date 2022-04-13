@@ -9,6 +9,7 @@ import Link from '../components/Link'
 interface pokeProps {
   name: string,
   url: string,
+  map:any,
 }
 
 
