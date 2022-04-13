@@ -5,10 +5,10 @@ import { GlobalStyle } from '../styles/globalStyles'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <GlobalStyle />
    <Layout>
       <Component {...pageProps} />
    </Layout>
+   <GlobalStyle />
    </>
   )
 }

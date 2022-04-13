@@ -3,6 +3,7 @@ import {API} from '../api'
 import  PokemonItem  from '../components/PokemonItem'
 import * as C from '../styles/indexStyle'
 import Link from '../components/Link'
+import Head from 'next/head'
 
 
 
@@ -20,6 +21,10 @@ type PokeProps = {
 const Home = ({AllPokes}:PokeProps) => {
   return(
     <C.Content>
+      <Head>
+        <title>PokeDex - Feito por Mateus Duarte</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {!!AllPokes && AllPokes.map((item:pokeProps, index:number) => (
         <div key={index} >
          <Link href={`/pokemon/${item.name}`}>

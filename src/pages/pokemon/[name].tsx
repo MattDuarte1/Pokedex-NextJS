@@ -8,6 +8,7 @@ import {useRouter} from 'next/router'
 import { NotFoundPoke } from '../../components/NotFoundPoke';
 import { ShowPokePage } from '../../components/ShowPokePage';
 import {BsArrowLeftCircleFill} from 'react-icons/bs'
+import Head from 'next/head';
 
 
 const Pokemon = ({Pokemon = null, error}:any) => {
@@ -41,6 +42,10 @@ const Pokemon = ({Pokemon = null, error}:any) => {
 
   return (
     <C.Content>
+       <Head>
+        <title>Pokemon: {query.name} - PokeDex</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <C.Backarrow>
        <BsArrowLeftCircleFill  onClick={handleHomePage} color='rgba(1,1,1,.5)' size={70}/>
       </C.Backarrow>
